@@ -1,4 +1,8 @@
-﻿// created on 9/21/2001 at 11:54 AM
+﻿/******************************************************************************************
+ * Author: Rahul Vats
+ * Date Created: 03/08/2017
+ * Purpose: To Understand the Asynchronous Distributed Programming
+******************************************************************************************/
 
 using System;
 using System.IO;
@@ -6,17 +10,20 @@ using System.Net.Sockets;
 
 namespace ClientSocket1
 {
-    public class ClientSocket1
+    public static class ClientSocket1
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             TcpClient socketForServer;
-            bool status = true;
+
+            var status = true;
+            var serverMessage = "";
+            var clientMessage = "";
+
             try
             {
                 socketForServer = new TcpClient("localhost", 8100);
                 Console.WriteLine("Connected to Server");
-
             }
             catch
             {
@@ -24,37 +31,29 @@ namespace ClientSocket1
                 return;
             }
 
-            NetworkStream networkStream = socketForServer.GetStream();
-            StreamReader streamreader = new StreamReader(networkStream);
-            StreamWriter streamwriter = new StreamWriter(networkStream);
+            var networkStream = socketForServer.GetStream();
+            var streamreader = new StreamReader(networkStream);
+            var streamwriter = new StreamWriter(networkStream);
 
             try
             {
-                string clientmessage = "";
-                string servermessage = "";
-
                 while (status)
                 {
-
                     Console.Write("Client:");
-                    clientmessage = Console.ReadLine();
-                    if ((clientmessage == "bye") || (clientmessage == "BYE"))
+                    clientMessage = Console.ReadLine();
+                    if ((clientMessage == "bye") || (clientMessage == "BYE"))
                     {
                         status = false;
                         streamwriter.WriteLine("bye");
                         streamwriter.Flush();
-
                     }
-                    if ((clientmessage != "bye") && (clientmessage != "BYE"))
+                    if ((clientMessage != "bye") && (clientMessage != "BYE"))
                     {
-                        streamwriter.WriteLine(clientmessage);
+                        streamwriter.WriteLine(clientMessage);
                         streamwriter.Flush();
-                        servermessage = streamreader.ReadLine();
-                        Console.WriteLine("Server:" + servermessage);
+                        serverMessage = streamreader.ReadLine();
+                        Console.WriteLine("Server:" + serverMessage);
                     }
-
-
-
                 }
             }
             catch
