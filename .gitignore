@@ -6,3 +6,10 @@
 /MVC/packages
 /MVC/MVC.Tests/obj/Debug
 /MVC/MVC/obj/Debug
+/MVC/DemoApp/obj/Debug
+/MVC/DemoApp/bin/Debug
+/MVC/ClientSocket1/bin/Debug
+/MVC/ClientSocket1/obj/Debug
+/MVC/MVC.Tests/bin/Debug
+/MVC/ServerSocket1/bin/Debug
+/MVC/ServerSocket1/obj/Debug
