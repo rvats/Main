@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LocalClient.cs" />
+    <Compile Include="Classes\ChatServer.cs" />
+    <Compile Include="Classes\LocalClient.cs" />
+    <Compile Include="Classes\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
