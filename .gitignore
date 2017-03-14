@@ -24,3 +24,9 @@
 /MVC/DB/bin/Debug/DB.dll
 /MVC/DB/bin/Debug/DB.dacpac
 /MVC/DB/bin/Debug
+/MVC/ChatServer/ChatLibrary/obj/Debug
+/MVC/ChatServer/ChatLibrary/bin/Debug
+/MVC/ChatServer/Client/obj/x86/Debug
+/MVC/ChatServer/Client/bin/Debug
+/MVC/ChatServer/Server/obj/x86/Debug
+/MVC/ChatServer/Server/bin/Debug
