@@ -16,9 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{ABDE05
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp", "DemoApp\DemoApp.csproj", "{27288C4B-3387-444F-8D82-AE95B461B7FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSocket1", "ClientSocket1\ClientSocket1.csproj", "{F30453A4-02C6-4982-9E9C-FE77E91CB4C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSocket", "ClientSocket1\ClientSocket.csproj", "{F30453A4-02C6-4982-9E9C-FE77E91CB4C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSocket1", "ServerSocket1\ServerSocket1.csproj", "{755C949E-3651-4F0D-BC62-785547CC5362}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSocket", "ServerSocket1\ServerSocket.csproj", "{755C949E-3651-4F0D-BC62-785547CC5362}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DB", "DB\DB.sqlproj", "{48E7DF7C-AB5D-46F5-980C-3E3FE58FB363}"
 EndProject
