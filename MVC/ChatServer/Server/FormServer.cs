@@ -1,23 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.ServiceModel;
+using System.Windows.Forms;
 
 namespace Server
 {
-    public partial class Form1 : Form
+    public partial class FormServer : Form
     {
         bool blnStartStop;
         ServiceHost host;
         ChatService cs = new ChatService();
         
 
-        public Form1()
+        public FormServer()
         {
             InitializeComponent();
             blnStartStop = true;
@@ -39,14 +34,14 @@ namespace Server
             {
                 host = new ServiceHost(typeof(Server.ChatService));
                 host.Open();
-                btnStartStop.Text = "Stop";
+                btnStartStop.Text = "Stop Server";
                 ChatService.ChatListOfNames += new ListOfNames(cs_ChatListOfNames);
             }
             else
             {
                 cs.Close();
                 host.Close();
-                btnStartStop.Text = "Start";
+                btnStartStop.Text = "Start Server";
             }
 
             blnStartStop = !blnStartStop;

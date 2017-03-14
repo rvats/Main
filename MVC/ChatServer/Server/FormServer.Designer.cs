@@ -1,6 +1,6 @@
 ﻿namespace Server
 {
-    partial class Form1
+    partial class FormServer
     {
         /// <summary>
         /// Required designer variable.
@@ -61,7 +61,7 @@
             this.lstUser.Size = new System.Drawing.Size(188, 134);
             this.lstUser.TabIndex = 3;
             // 
-            // Form1
+            // FormServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -69,8 +69,8 @@
             this.Controls.Add(this.lstUser);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnStartStop);
-            this.Name = "Form1";
-            this.Text = "Server";
+            this.Name = "FormServer";
+            this.Text = "TWI Chat Server";
             this.ResumeLayout(false);
 
         }
