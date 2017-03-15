@@ -58,11 +58,23 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Schema" />
+    <Folder Include="Security" />
+    <Folder Include="CLR" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\Core.sql" />
+    <Build Include="Security\EncryptionCertificate.sql" />
+    <Build Include="CLR\Procedure1.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DB.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLR\SqlStoredProcedure1.cs" />
   </ItemGroup>
 </Project>
