@@ -60,11 +60,16 @@
     <Folder Include="Schema" />
     <Folder Include="Security" />
     <Folder Include="CLR" />
+    <Folder Include="Tables" />
+    <Folder Include="SeedData" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\Core.sql" />
     <Build Include="Security\EncryptionCertificate.sql" />
     <Build Include="CLR\Procedure1.sql" />
+    <Build Include="Schema\Reference.sql" />
+    <Build Include="Tables\Reference.Gender.sql" />
+    <Build Include="SeedData\Reference_Gender.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DB.publish.xml" />
