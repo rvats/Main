@@ -30,3 +30,16 @@
 /MVC/ChatServer/Client/bin/Debug
 /MVC/ChatServer/Server/obj/x86/Debug
 /MVC/ChatServer/Server/bin/Debug
+/Main/ChatApps/bin/Debug
+/Main/ChatApps/obj/Debug
+/Main/ChatServer/ChatLibrary/bin/Debug
+/Main/ChatServer/ChatLibrary/obj/Debug
+/Main/DemoApp/bin/Debug
+/Main/DemoApp/obj/Debug
+/Main/packages
+/Main/ChatServer/Server/obj/x86/Debug
+/Main/DB/bin/Debug
+/Main/DB/obj/Debug
+/Main/DesignPatterns/bin/Debug/netstandard1.6
+/Main/DesignPatterns/obj/Debug/netstandard1.6
+/Main/HackerRank/HR.Challenge.30Days/obj/Debug

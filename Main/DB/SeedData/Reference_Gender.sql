@@ -12,7 +12,7 @@ DECLARE @tblGender table (
 	[GenderID]     INT,
 	[Gender]  NVARCHAR(100),
 	[GenderCode] NVARCHAR(10) NULL
-);
+)
 
 --Insert Data into Table Variable
 INSERT INTO @tblGender ([GenderID],[Gender],LegacyCode,LegacyCodeDescription,[SortOrder],[IsActive],[ModifiedBy],[ModifiedOn]) VALUES
