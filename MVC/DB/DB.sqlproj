@@ -60,11 +60,13 @@
     <Folder Include="Schema" />
     <Folder Include="Security" />
     <Folder Include="CLR" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\Core.sql" />
     <Build Include="Security\EncryptionCertificate.sql" />
     <Build Include="CLR\Procedure1.sql" />
+    <Build Include="Tables\Core.Users.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DB.publish.xml" />
